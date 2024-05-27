@@ -5,252 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="style/style.css">
     <title>HODU</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            width: 1920px;
-            height: 102px;
-            background-color: #F2E9D8;
-            display: flex;
-            position: absolute;
-            z-index: 1;
-        <!-- 제일 위에 넣기 위해 zindex사용 -->
-        }
-
-        .main-logo {
-            width: 130px;
-            height: 40px;
-            margin-top: 31px;
-            margin-left: 320px;
-            margin-bottom: 31px;
-        }
-
-        .Home {
-            margin: 41px 30px 41px 756px
-        }
-
-        .About {
-            margin-right: 30px;
-            margin-top: 41px;
-            margin-bottom: 41px;
-        }
-
-        .Support {
-            margin-right: 49px;
-            margin-top: 41px;
-            margin-bottom: 41px;
-        }
-
-        .top-download-btn {
-            color: white;
-            background-color: #D97652;
-            border-color: #D97652;
-            border-radius: 40px;
-            width: 140px;
-            height: 50px;
-            margin-top: 26px;
-            margin-bottom: 26px;
-        }
-
-        .main1 {
-        <!-- 헤더 밑에 고양이 박스 들어가있는 부분 -->
-            width: 1920px;
-            height: 900px;
-            position: relative;
-            background-color: #F2E9D8;
-        }
-
-        .box-cat-title {
-            font-size: 48px;
-            width: 720px;
-            height: 120px;
-            margin: 0 905px 40px 320px;
-            padding-top: 150px;
-        }
-
-        .box-cat-text {
-            width: 420px;
-            height: 86px;
-            margin-left: 320px;
-            margin-bottom: 40px;
-        }
-
-        .box-cat-img {
-            position: absolute;
-            top: 134px;
-            left: 1170px;
-            width: 415px;
-            height: 766px;
-        }
-
-        .download-btn {
-            border-radius: 40px;
-            background-color: #D97652;
-            border-color: #D97652;
-            color: white;
-            width: 140px;
-            height: 50px;
-            margin-left: 320px;
-        }
-
-        .cat-bed {
-            display: flex;
-            justify-content: center;
-        }
-
-        .cat-bed-img {
-            width: 660px;
-            height: 390px;
-            border-radius: 30px;
-            margin: 80px 110px 70px 110px;
-        }
-
-        .cat-bed-title {
-            width: 510px;
-            height: 135px;
-            font-size: 36px;
-            margin-top: 172px;
-            margin-right: 320px;
-            margin-bottom: 30px;
-        }
-
-        .cat-bed-text {
-            width: 510px;
-            height: 40px;
-        }
-        .orange-text{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .title-for-orange-dummy {
-            color: #D97652;
-            width: 875px;
-            height: 60px;
-            font-size: 45px;
-            margin: 12px 522px 12px 523px;
-            text-align: center;
-        }
-
-        .text-for-orange-dummy {
-            width: 710px;
-            height: 42px;
-            font-size: 16px;
-            margin-right: 605px;
-            margin-bottom: 88px;
-            margin-left: 605px;
-            text-align: center;
-        }
-
-        .img-wrapper {
-            width: 1278px;
-            height: 378px;
-            margin: 88px 322px 100px 320px;
-            display: flex;
-            justify-content: space-between;
-            flex-flow: wrap;
-            border-radius: 30px;
-        }
-
-        .showmore {
-            flex-direction: column;
-        }
-
-        .showmore-text{
-            width: 320px;
-            height: 30px;
-            font-size: 24px;
-            margin: 450px 815px 28px 815px;
-        }
-
-        .showmore-btn {
-            width: 143px;
-            height: 50px;
-            border-radius: 40px;
-            background-color: #D97652;
-            border-color: #D97652;
-            color: white;
-            margin: 0 888.5px 80px 888.5px;
-        }
-
-        /* 모달 파트 */
-        .modal-wrapper {
-            position: fixed;
-            top: 300px;
-            left: 300px;
-            margin-left: 320px;
-            display: none;
-            z-index: 999;
-        }
-
-        .modal-cat {
-            position: relative;
-            margin-left: 245px;
-            margin-top: -320px;
-            margin-bottom: 24px;
-        }
-
-        .thank {
-            font-size: 36px;
-            font-weight: 700;
-            width: 212px;
-            height: 46px;
-            text-align: center;
-            line-height: 45px;
-            color: #D97652;
-            margin-left: 194px;
-            margin-bottom: 12px;
-        }
-
-        .thank-text {
-            font-size: 14px;
-            text-align: center;
-            width: 365px;
-            height: 18px;
-            margin-left: 108px;
-            margin-bottom: 38px;
-        }
-
-        .map {
-            display: flex;
-            width: 100%;
-            margin-left: 20%;
-            flex-direction: column;
-        }
-
-        .map > p {
-            width: 100%;
-        }
-
-        .mapwrapper {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .kakaomap {
-            width: 300px;
-            height: 300px;
-        }
-        footer {
-            display: flex;
-            flex-direction: row;
-            width: 1920px;
-            height: 160px;
-            justify-content: space-around;
-        }
-        .hodu-logo {
-
-        }
-        .sns-logo {
-            float: left;
-        }
-    </style>
 </head>
 
 <body>
@@ -258,21 +14,27 @@
     <nav>
         <!--메인 로고 -->
         <img src="image/sns/Logo-fin.svg" class="main-logo">
-        <a href="" class="Home">Home</a>
-        <a href="" class="About">About</a>
-        <a href="" class="Support">Support</a>
-        <!--다운로드 버튼 -->
-        <button class="top-download-btn">Download</button>
+        <div class="nav-btn-group">
+            <p>Home</p>
+            <p>About</p>
+            <p>Support</p>
+            <!--다운로드 버튼 -->
+            <button class="top-download-btn">Download</button>
+        </div>
     </nav>
 </header>
 <main>
     <section>       <!-- Lorem & 상자 뒤집어 쓴 고양이 사진 -->
-        <div class="main1">
-            <h1 class="box-cat-title"> Lorem Ipsum is simply dummy text of the printing and</h1>
-            <div class="box-cat-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        <div class="main-img">
+            <div class="main-img-text">
+                <h1 class="title">Lorem Ipsum is simply<br/>dummy text of the printing and</h1>
+                <p class="box-cat-text">
+                    Lorem Ipsum is simply dummy text of the printing and<br/>typesetting industry.<br/>
+                    Lorem Ipsum has been the industry's standard dummy text<br/>ever since the 1500s, when an unknown
+                </p>
+                <button class="download-btn">Download</button>
             </div>
-            <button class="download-btn">Download</button>
+
             <img src="image/cat/cat_in_box.svg" alt="상자 쓰고있는 고앵이" class="box-cat-img">
         </div>
     </section>
@@ -296,7 +58,7 @@
                 dummy text of the printing and dummy
             </h3>
             <p class="text-for-orange-dummy">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             </p>
         </div>
@@ -358,21 +120,16 @@
         </div>
     </section>
 
-    <dialog id="modal">
-        <div class="modal-wrapper">
-            <div class="modal-page">
-                <img src="image/modal_base_img.png" alt="모달 배경">
-            </div>
+    <dialog id="modal">         <!-- 모달 쓸때 팝업창 관련이라 써봤다 -->
+        <div class="modal">
             <div class="modal-cat">
                 <img src="image/cat/smile_cat.png" alt="모달 고양이">
             </div>
-            <div class="thank">
-                Thank you!
-            </div>
-            <div class="thank-text">
+            <p class="h2-text">Thank you!</p>
+            <p class="description">
                 Lorem Ipsum is simply dummy text of the printing industry.
-            </div>
-            <div class="Ok-button">
+            </p>
+            <div id="ok-btn">
                 <button>OK! I Love HODU</button>
             </div>
         </div>
@@ -388,10 +145,26 @@
     };
     const map = new kakao.maps.Map(container, options);
 </script>
+<!-- 모달을 위한 script 생성 */ -->
 <script>
     const subscribeBtn = document.getElementById('subscribe-btn');
-    const modal = document.getElementById('modal');
-    subscribeBtn.addEventListener('click', () => modal.show());
+    const modal = document.getElementById('modal'); /* getElementById 사용시 한번씩 배열로 딸려나와서*/
+    const modalInside = document.querySelector('.modal'); /* querySelector를 이용해 사용했다 */
+    const body = document.querySelector("body");
+    const closeBtn = document.getElementById('ok-btn');
+
+    subscribeBtn.addEventListener('click', () => modal.showModal());
+    closeBtn.addEventListener('click', () => modal.close());
+    body.addEventListener('click', (e) => {         /* 익명 함수로 모달 화면 밖에 클릭 해도 돌아가도록 함 */
+        const target = e.target;
+        if (target == subscribeBtn || target == closeBtn) {
+            // do nothing
+        } else {
+            if (!modalInside.contains(target)) {
+                modal.close();
+            }
+        }
+    })
 </script>
 <footer>    <!-- 고양이 사진 &  -->
     <div class="hodu-logo">

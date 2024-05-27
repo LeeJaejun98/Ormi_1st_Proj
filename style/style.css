@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header, section, main {
+    width: 100%;
+}
+
+nav {
+    height: 102px;
+    background-color: #F2E9D8;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-btn-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.nav-btn-group > p {
+    font-weight: 400;
+}
+.main-logo {
+    scale: 60%;
+}
+
+.top-download-btn {
+    color: white;
+    background-color: #D97652;
+    border: none;
+    border-radius: 40px;
+    width: 140px;
+    height: 50px;
+}
+
+.main-img {
+<!-- 헤더 밑에 고양이 박스 들어가있는 부분 -->
+    /*height: 900px;*/
+    background-color: #F2E9D8;
+    display: flex;
+}
+.main-img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.main-img-text > .title {
+    font-size: 48px;
+}
+
+.box-cat-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.download-btn {
+    border-radius: 40px;
+    background-color: #D97652;
+    border-color: #D97652;
+    color: white;
+    width: 140px;
+    height: 50px;
+}
+.box-cat-img {
+
+}
+
+
+.cat-bed {
+    display: flex;
+    justify-content: center;
+}
+
+.cat-bed-img {
+    width: 660px;
+    height: 390px;
+    border-radius: 30px;
+    margin: 80px 110px 70px 110px;
+}
+
+.cat-bed-title {
+    width: 510px;
+    height: 135px;
+    font-size: 36px;
+    margin-top: 172px;
+    margin-right: 320px;
+    margin-bottom: 30px;
+}
+
+.cat-bed-text {
+    width: 510px;
+    height: 40px;
+}
+.orange-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-for-orange-dummy {
+    color: #D97652;
+    font-size: 45px;
+    text-align: center; /* text 중앙 정렬 */
+}
+
+.text-for-orange-dummy {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.img-wrapper {
+    width: 1278px;
+    height: 378px;
+    margin: 88px 322px 100px 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    border-radius: 30px;
+}
+
+.showmore {
+    flex-direction: column;
+}
+
+.showmore-text{
+    width: 320px;
+    height: 30px;
+    font-size: 24px;
+    margin: 450px 815px 28px 815px;
+}
+
+.showmore-btn {
+    width: 143px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #D97652;
+    border-color: #D97652;
+    color: white;
+    margin: 0 888.5px 80px 888.5px;
+}
+
+/* 모달 파트 */
+dialog {
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(82, 77, 144, 0.1), 0px 2px 2px 0px rgba(82, 77, 144, 0.08);
+    background-image: url("../image/modal_base_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    width: 600px;
+    height: 400px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-cat {
+    scale: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal > .h2-text {
+    color: #D97652;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.modal > .description {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+#ok-btn {
+    margin-top: 25px;
+}
+
+#ok-btn > button {
+    background: #D97652;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+    width: 183px;
+    height: 50px;
+    border: 0;
+    border-radius: 40px;
+}
+<!-- 카카오 맵  -->
+.map {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    flex-direction: column;
+}
+
+.map > p {
+    width: 100%;
+}
+
+.mapwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.kakaomap {
+    width: 300px;
+    height: 300px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 1920px;
+    height: 160px;
+    justify-content: space-around;
+}
+.hodu-logo {
+
+}
+.sns-logo {
+    float: left;
+}
