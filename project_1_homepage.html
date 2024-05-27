@@ -69,28 +69,36 @@
                 <img src="image/cat/1_1.jpg" alt="1-1" height="378" width="378">
                 <img src="image/cat/1_2.jpg" alt="1-2" height="378" width="378">
                 <img src="image/cat/1_3.jpg" alt="1-3" height="378" width="378">
+            </article>
+            <article>
                 <img src="image/cat/2_1.jpg" alt="2-1" height="378" width="378">
                 <img src="image/cat/2_2.jpg" alt="2-2" height="378" width="378">
                 <img src="image/cat/2_3.jpg" alt="2-3" height="378" width="378">
             </article>
+            <article id="showmore-cat-img" style="display: none"> <!-- style에서 display none으로 공간할당도 안하기-->
+                <img src="image/cat/1_1.jpg" alt="1-1" height="378" width="378">
+                <img src="image/cat/1_2.jpg" alt="1-2" height="378" width="378">
+                <img src="image/cat/1_3.jpg" alt="1-3" height="378" width="378">
+            </article>
+        </div>
+        <div class="show-more-btn">
+            <p><strong>Continue exploring HODU</strong></p><br>
+            <button>Show more</button>
         </div>
     </section>
-    <div class="showmore">
-        <p class="showmore-text"><strong>Continue exploring HODU</strong></p><br>
-        <button class="showmore-btn">Show more</button>
-    </div>
-
+    <hr/>
     <!-- 카카오 api로 지도 가져오기-->
-    <section class="map">
-        <div class="mapwrapper">
+    <section>
+        <div class="map-wrapper">
             <div class="location">
                 <p>Where you'll be</p>
             </div>
-            <div class="location-explain">
+            <div class="location-description">
                 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
             </div>
+            <div class="kakaomap" id="kakaomap"></div>
         </div>
-        <div class="kakaomap" id="kakaomap"></div>
+
     </section>
 
     <section id="subscribe">
