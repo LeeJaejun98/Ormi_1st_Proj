@@ -223,16 +223,49 @@ dialog::backdrop {
 .map-wrapper {
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
+    align-items: flex-start;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+.map-wrapper > .location {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.map-wrapper > .location-description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .kakaomap {
     width: 1278px;
     height: 520px;
 }
+
+.subscribe-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #263140;
+    border-radius: 30px;
+}
+.subscribe-wrapper > .subscribe-text {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.subscribe-wrapper > .email-subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
 footer {
     display: flex;
     flex-direction: row;
-    width: 1920px;
-    height: 160px;
     justify-content: space-around;
 }
 .hodu-logo {

@@ -101,7 +101,7 @@
 
     </section>
 
-    <section id="subscribe">
+    <section>
         <div class="subscribe-wrapper">
             <div class="subscribe-text">
                 <div class="comment">
@@ -173,6 +173,14 @@
             }
         }
     })
+    //show-more 부분
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    const hiddenArticle = document.getElementById('showmore-cat-img');
+    showMoreBtn.addEventListener('click', () => {
+        if (hiddenArticle.style['display'] === 'none') {
+            hiddenArticle.style['display'] = 'flex';
+        }
+    });
 </script>
 <footer>    <!-- 고양이 사진 &  -->
     <div class="hodu-logo">
