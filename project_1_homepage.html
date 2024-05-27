@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>HODU</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
         }
@@ -59,13 +59,14 @@
         }
 
         .main1 {
-        <!-- 헤더 밑에 고양이 박스 들어가있는 부분 --> width: 1920px;
+        <!-- 헤더 밑에 고양이 박스 들어가있는 부분 -->
+            width: 1920px;
             height: 900px;
             position: relative;
             background-color: #F2E9D8;
         }
 
-        .box-cat-title{
+        .box-cat-title {
             font-size: 48px;
             width: 720px;
             height: 120px;
@@ -79,13 +80,14 @@
             margin-left: 320px;
             margin-bottom: 40px;
         }
-        .box_cat_img {
-             position: absolute;
-             top: 134px;
-             left: 1170px;
-             width: 415px;
-             height: 766px;
-         }
+
+        .box-cat-img {
+            position: absolute;
+            top: 134px;
+            left: 1170px;
+            width: 415px;
+            height: 766px;
+        }
 
         .download-btn {
             border-radius: 40px;
@@ -96,16 +98,20 @@
             height: 50px;
             margin-left: 320px;
         }
-        .cat-bed{
+
+        .cat-bed {
             display: flex;
+            justify-content: center;
         }
-        .cat-bed-img{
+
+        .cat-bed-img {
             width: 660px;
             height: 390px;
             border-radius: 30px;
             margin: 80px 110px 70px 110px;
         }
-        .cat-bed-title{
+
+        .cat-bed-title {
             width: 510px;
             height: 135px;
             font-size: 36px;
@@ -113,11 +119,17 @@
             margin-right: 320px;
             margin-bottom: 30px;
         }
-        .cat-bed-text{
+
+        .cat-bed-text {
             width: 510px;
             height: 40px;
         }
-        .title-for-orange-dummy{
+        .orange-text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .title-for-orange-dummy {
             color: #D97652;
             width: 875px;
             height: 60px;
@@ -125,7 +137,8 @@
             margin: 12px 522px 12px 523px;
             text-align: center;
         }
-        .text-for-orange-dummy{
+
+        .text-for-orange-dummy {
             width: 710px;
             height: 42px;
             font-size: 16px;
@@ -134,7 +147,8 @@
             margin-left: 605px;
             text-align: center;
         }
-        #img_wrapper {
+
+        .img-wrapper {
             width: 1278px;
             height: 378px;
             margin: 88px 322px 100px 320px;
@@ -143,16 +157,19 @@
             flex-flow: wrap;
             border-radius: 30px;
         }
-        .showMore {
+
+        .showmore {
             flex-direction: column;
         }
-        .showMore_text{
+
+        .showmore-text{
             width: 320px;
             height: 30px;
             font-size: 24px;
             margin: 450px 815px 28px 815px;
         }
-        .showMore_btn{
+
+        .showmore-btn {
             width: 143px;
             height: 50px;
             border-radius: 40px;
@@ -163,29 +180,32 @@
         }
 
         /* 모달 파트 */
-        .modal_wrapper{
+        .modal-wrapper {
             position: fixed;
-            top:300px;
-            left:300px;
+            top: 300px;
+            left: 300px;
             margin-left: 320px;
             display: none;
             z-index: 999;
         }
-        .modal_page img{
-            width:600px;
+
+        .modal-page-img {
+            width: 600px;
             height: 400px;
             border-radius: 30px;
         }
-        .modal_cat{
+
+        .modal-cat {
             position: relative;
             margin-left: 245px;
             margin-top: -320px;
             margin-bottom: 24px;
         }
-        .thank{
-            font-size:36px;
+
+        .thank {
+            font-size: 36px;
             font-weight: 700;
-            width:212px;
+            width: 212px;
             height: 46px;
             text-align: center;
             line-height: 45px;
@@ -193,25 +213,47 @@
             margin-left: 194px;
             margin-bottom: 12px;
         }
-        .thank_text{
-            font-size:14px;
+
+        .thank-text {
+            font-size: 14px;
             text-align: center;
-            width:365px;
+            width: 365px;
             height: 18px;
             margin-left: 108px;
             margin-bottom: 38px;
         }
-        #love_but button{
-            width:183px;
+
+        .love-but-button {
+            width: 183px;
             height: 50px;
             margin-left: 205px;
             margin-bottom: 40px;
             font-weight: 700;
             background-color: #D97652;
-            color:white;
+            color: white;
             border-radius: 20px;
-            border:none;
+            border: none;
             cursor: pointer;
+        }
+        .map {
+            display: flex;
+            width: 100%;
+            margin-left: 20%;
+            flex-direction: column;
+        }
+
+        .map > p {
+            width: 100%;
+        }
+
+        .mapwrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .kakaomap {
+            width: 300px;
+            height: 300px;
         }
     </style>
 </head>
@@ -229,17 +271,17 @@
     </nav>
 </header>
 <main>
-    <section><!-- Lorem & 상자 뒤집어 쓴 고양이 사진 -->
+    <section>       <!-- Lorem & 상자 뒤집어 쓴 고양이 사진 -->
         <div class="main1">
             <h1 class="box-cat-title"> Lorem Ipsum is simply dummy text of the printing and</h1>
             <div class="box-cat-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             </div>
             <button class="download-btn">Download</button>
-            <img src="image/cat/cat_in_box.svg" alt="상자 쓰고있는 고앵이" class="box_cat_img">
+            <img src="image/cat/cat_in_box.svg" alt="상자 쓰고있는 고앵이" class="box-cat-img">
         </div>
     </section>
-    <section>   <!-- 누워있는 고양이 사진  & Lorem -->
+    <section>       <!-- 누워있는 고양이 사진  & Lorem -->
         <div class="cat-bed">
             <img src="image/cat/cat_on_bed.svg" class="cat-bed-img" alt="침대위 고양이">
             <span>
@@ -253,17 +295,19 @@
             </span>
         </div>
     </section>
-    <section class="orange-text"> <!-- 사진 없는 더미 부분 -->
-        <h3 class="title-for-orange-dummy">
-            dummy text of the printing and dummy
-        </h3>
-        <p class="text-for-orange-dummy">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-        </p>
+    <section>       <!-- 사진 없는 주황색 더미 부분 -->
+        <div class="orange-text">
+            <h3 class="title-for-orange-dummy">
+                dummy text of the printing and dummy
+            </h3>
+            <p class="text-for-orange-dummy">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            </p>
+        </div>
     </section>
     <section>   <!-- 2*3 배열로 사진 나열 -->
-        <div id="img_wrapper">
+        <div class="img-wrapper">
             <article>
                 <img src="image/cat/1_1.jpg" alt="1-1" height="378" width="378">
                 <img src="image/cat/1_2.jpg" alt="1-2" height="378" width="378">
@@ -274,64 +318,66 @@
             </article>
         </div>
     </section>
-    <div class="showMore">
-        <p class="showMore_text"><strong>Continue exploring HODU</strong></p><br>
-        <button class="showMore_btn">Show more</button>
+    <div class="showmore">
+        <p class="showmore-text"><strong>Continue exploring HODU</strong></p><br>
+        <button class="showmore-btn">Show more</button>
     </div>
 
-    <!-- kakao map api 이용한 지도 표출-->
-    <section id="map">
+    <!-- 카카오 api로 지도 가져오기-->
+    <section class="map">
         <div class="mapwrapper">
             <div class="location">
                 <p>Where you'll be</p>
             </div>
-            <div class="location_explain">
+            <div class="location-explain">
                 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
             </div>
         </div>
-        <div id="kakaomap"></div>
+        <div class="kakaomap" id="kakaomap"></div>
     </section>
+
     <section id="subscribe">
-        <div class="subscribe_wrapper">
-            <div class="subscribe_text">
+        <div class="subscribe-wrapper">
+            <div class="subscribe-text">
                 <div class="comment">
-                    Subscribe to our Blog Post
+                    <strong>Subscribe to our Blog Post</strong>
                 </div>
-                <div class="comment_longer">
+                <div class="comment-longer">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
                     Lorem Ipsum has been the industry's standard dummy text
                 </div>
             </div>
-            <div class="email_subscribe">
-                <div class="input_wrapper">
-                    <div class="email_logo">
+            <div class="email-subscribe">
+                <div class="input-wrapper">
+                    <div class="email-logo">
                         <img src="image/sns/mail.svg" alt="이메일로고">
                     </div>
-                    <div class="email_post">
+                    <div class="email-post">
                         <input type="email" id="emailInput" placeholder="Enter your e-mail address">
                     </div>
-                    <div class="sub_btn">
-                        <button id="subscribe_btn">Subscribe</button>
+                    <div class="sub-btn">
+                        <button id="subscribe-btn">Subscribe</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="modal">
-        <div class="modal_wrapper">
-            <div class="modal_page">
+        <div class="modal-wrapper">
+            <div class="modal-page">
                 <img src="image/modal_base_img.png" alt="모달 배경">
             </div>
-            <div class="modal_cat">
+            <div class="modal-cat">
                 <img src="image/cat/smile_cat.png" alt="모달 고양이">
             </div>
             <div class="thank">
                 Thank you!
             </div>
-            <div class="thank_text">
+            <div class="thank-text">
                 Lorem Ipsum is simply dummy text of the printing industry.
             </div>
-            <div id="i_love_hodu">
+            <div class="i-love-hodu">
                 <button>OK! I Love HODU</button>
             </div>
         </div>
@@ -340,16 +386,28 @@
 <!-- kakao map api-->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=769afd4a146038480174a5ba59994f21"></script>
 <script>
-    const container = document.getElementById('map');
+    const container = document.getElementById('kakaomap');
     const options = {
         center: new kakao.maps.LatLng(33.450701, 126.570667),
         level: 2
     };
-    var map = new kakao.maps.Map(container, options);
+    const map = new kakao.maps.Map(container, options);
 </script>
 
 <footer>    <!-- 고양이 사진 &  -->
-
+    <div class="hodu-logo">
+        <img src="image/sns/Logo-fin.svg" alt="호두 로고">
+    </div>
+    <div class="sns-logo">
+        <ul>
+            <li>
+                <img src="image/sns/blog.svg" alt="블로그">
+                <img src="image/sns/instagram.svg" alt="인스타">
+                <img src="image/sns/facebook.svg" alt="페이스북">
+                <img src="image/sns/youtube.svg" alt="유튜브">
+            </li>
+        </ul>
+    </div>
 </footer>
 
 </body>
