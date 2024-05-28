@@ -300,8 +300,12 @@ footer {
     justify-content: space-around;
 }
 .hodu-logo {
-
+    display: flex;
 }
 .sns-logo {
-    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
 }
