@@ -167,7 +167,8 @@ dialog {
     background-image: url("../image/modal_base_img.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 110%;
+    background-size: 100%;
+    padding: 0;
     width: 600px;
     height: 400px;
 }
@@ -194,7 +195,7 @@ dialog::backdrop {
     font-size: 36px;
     line-height: 45px;
     font-weight: 700;
-    margin: 0;
+    margin: -3% 0 0 0;
 }
 
 .modal > .description {
